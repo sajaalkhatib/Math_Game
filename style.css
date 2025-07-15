@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap');
+
+body {
+  font-family: 'Cairo', sans-serif;
+  background: linear-gradient(to bottom right, #fbeaff, #d9c7f2);
+  color: #4a3f6b;
+  text-align: center;
+  margin: 0;
+  padding: 50px 20px;
+  direction: rtl;
+}
+
+h1, h2 {
+  color: #7e5abf;
+  margin-bottom: 10px;
+}
+
+#game {
+  background: #fff0fa;
+  padding: 25px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  box-shadow: 0 8px 20px rgba(122, 103, 150, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+#game:hover {
+  transform: scale(1.01);
+}
+
+button {
+  padding: 12px 20px;
+  background: linear-gradient(to right, #c084fc, #e0aaff);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: linear-gradient(to right, #b372e6, #d89ff3);
+  transform: scale(1.05);
+}
+
+input[type="number"] {
+  width: 80%;
+  max-width: 200px;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 18px;
+  text-align: center;
+  border: 2px solid #d1b3ff;
+  border-radius: 10px;
+  outline: none;
+  background-color: #fff9ff;
+}
+
+#feedback {
+  font-weight: bold;
+  margin-top: 10px;
+  color: #a14caf;
+}
+
+#score {
+  font-weight: bold;
+  color: #ff69b4;
+}
+
+#timer, #level {
+  color: #5d4c85;
+  margin-bottom: 10px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+#gameContent {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+#startGame:hover {
+  animation: pulse 0.6s ease-in-out;
+}
+
+.shake {
+  animation: shake 0.4s;
+}
+
+#question {
+  transition: all 0.4s ease-in-out;
+}

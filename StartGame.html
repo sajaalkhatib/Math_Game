@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>مسابقة الرياضيات</title>
+
+ 
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet" />
+  
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🌸 مسابقة الرياضيات 🌸</h1>
+
+  </header>
+
+  <main id="game">
+    <button id="startGame">ابدأ اللعبة</button>
+
+    <section id="gameContent" style="display: none;">
+      <div class="game-info">
+        <h3 id="level">المستوى: 1</h3>
+        <h4 id="timer">الوقت المتبقي: 10:00</h4>
+      </div>
+
+      <div class="question-box">
+        <p id="question"></p>
+        <input type="number" id="answer" placeholder="إجابتك هنا" />
+        <button id="submit">إرسال</button>
+        <p id="feedback"></p>
+        <p>النقاط: <span id="score">0</span></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>saja alkhatib © 2025</p>
+  </footer>
+
+  <script src="game.js"></script>
+</body>
+</html>
